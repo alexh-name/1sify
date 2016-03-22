@@ -1,4 +1,9 @@
 Macht das Internet 1 bisschen besser. 
+
+Installation - How To
+------------------
+Einfach die .crx-Datei herunterladen und in Chrome auf Extensions klicken. Dort dann den Developer Modus aktivieren und .crx-Datei in das Extensions-Fenster ziehen. 1 einfacher prozess. 
+
 ![](logo.png)
 
 Bekannte Bugs
