@@ -31,8 +31,12 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = v.replace(/\bk(ein|einen|eine)\b/g, "k1");
+	v = v.replace(/\bK(ein|einen|eine)\b/g, "K1");
 	v = v.replace(/\be(in|inen|ine)\b/gi, "1");
 
+	v = v.replace(/\bkeinem\b/g, "k1em");
+	v = v.replace(/\bKeinem\b/g, "K1em");
 	v = v.replace(/\beinem\b/gi, "1em");
 	
 	v = v.replace(/\bersten\b/gi, "1sten");
