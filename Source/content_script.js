@@ -31,14 +31,14 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\sein\s|\seinen\s|\seine\s/gi, " 1 ");
+	v = v.replace(/\be(in|inen|ine)\b/gi, "1");
+
+	v = v.replace(/\beinem\b/gi, "1em");
 	
-	v = v.replace(/\seinem\s/gi, " 1em ");
+	v = v.replace(/\bersten\b/gi, "1sten");
+	v = v.replace(/\berste$\b/gi, "1ste");
 	
-	v = v.replace(/\sersten\s/gi, " 1sten ");
-	v = v.replace(/\serste$\s/gi, " 1ste ");
-	
-	v = v.replace(/\seinzig$/gi, " 1zig ");
+	v = v.replace(/\beinzig\b/gi, "1zig");
 	
 	v = v.replace(/Es\s*gibt\s*kein\s*richtiges\s*Leben\s*im\s*Falschen/gi, "Was ist das für 1 life");
 
