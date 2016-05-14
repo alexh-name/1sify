@@ -31,25 +31,18 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\sein\s/g, " 1 ");
-	v = v.replace(/\sEin\s/g, " 1 ");	
+	v = v.replace(/\sein\s/gi, " 1 ");	
 	
-	v = v.replace(/\seinen\s/g, " 1 ");
-	v = v.replace(/\sEinen\s/g, " 1 ");
+	v = v.replace(/\seinen\s/gi, " 1 ");
 	
-	v = v.replace(/\seinem\s/g, " 1em ");
-	v = v.replace(/\sEinem\s/g, " 1em ");
+	v = v.replace(/\seinem\s/gi, " 1em ");
 	
-	v = v.replace(/\seine\s/g, " 1 ");
-	v = v.replace(/\sEine\s/g, " 1 ");
+	v = v.replace(/\seine\s/gi, " 1 ");
 	
-	v = v.replace(/\sErsten\s/g, " 1sten ");
-	v = v.replace(/\sersten\s/g, " 1sten ");
-	v = v.replace(/\sErste\s/g, " 1ste ");
-	v = v.replace(/\serste$\s/g, " 1ste ");
+	v = v.replace(/\sersten\s/gi, " 1sten ");
+	v = v.replace(/\serste$\s/gi, " 1ste ");
 	
-	v = v.replace(/\sEinzig$/g, " 1zig ");
-	v = v.replace(/\seinzig$/g, " 1zig ");
+	v = v.replace(/\seinzig$/gi, " 1zig ");
 	
 	v = v.replace(/Es\s*gibt\s*kein\s*richtiges\s*Leben\s*im\s*Falschen/gi, "Was ist das für 1 life");
 
