@@ -31,13 +31,9 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\sein\s/gi, " 1 ");	
-	
-	v = v.replace(/\seinen\s/gi, " 1 ");
+	v = v.replace(/\sein\s|\seinen\s|\seine\s/gi, " 1 ");
 	
 	v = v.replace(/\seinem\s/gi, " 1em ");
-	
-	v = v.replace(/\seine\s/gi, " 1 ");
 	
 	v = v.replace(/\sersten\s/gi, " 1sten ");
 	v = v.replace(/\serste$\s/gi, " 1ste ");
