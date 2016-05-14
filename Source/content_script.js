@@ -1,4 +1,6 @@
-walk(document.body);
+document.addEventListener("DOMNodeInserted", function(e) {
+	walk(document.body);
+}, false);
 
 function walk(node) 
 {
@@ -46,11 +48,5 @@ function handleText(textNode)
 	
 	v = v.replace(/Es\s*gibt\s*kein\s*richtiges\s*Leben\s*im\s*Falschen/gi, "Was ist das für 1 life");
 
-	
-	
-
-
 	textNode.nodeValue = v;
 }
-
-
