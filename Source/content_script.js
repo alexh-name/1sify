@@ -33,6 +33,8 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = v.replace(/Es\s*gibt\s*kein\s*richtiges\s*Leben\s*im\s*Falschen/gi, "Was ist das für 1 life");
+
 	v = v.replace(/\bk(ein|eine)\b/g, "k1");
 	v = v.replace(/\bK(ein|eine)\b/g, "K1");
 	v = v.replace(/\b(ein|eine)\b/gi, "1");
@@ -53,8 +55,6 @@ function handleText(textNode)
 	v = v.replace(/\berste$\b/gi, "1ste");
 	
 	v = v.replace(/\beinzig\b/gi, "1zig");
-	
-	v = v.replace(/Es\s*gibt\s*kein\s*richtiges\s*Leben\s*im\s*Falschen/gi, "Was ist das für 1 life");
 
 	textNode.nodeValue = v;
 }
